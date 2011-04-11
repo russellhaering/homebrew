@@ -66,7 +66,7 @@ class Octave < Formula
     fltk = Formula.factory('fltk')
     unless no_native? or fltk.installed_prefix.to_s !~ /1.1.10$/
       onoe <<-EOS.undent
-        fltk 1.1.10 is too old to be used with Octave. Please reinstall ftlk with
+        fltk 1.1.10 is too old to be used with Octave. Please reinstall fltk with
         the option "--HEAD"; otherwise, install Octave with option "--without-fltk".
       EOS
       exit 1
